@@ -34,7 +34,7 @@ body.win32.dark div#toolbar button {color: #646464;}
 body.dark #editor {background-color: #14141e;}
 body.dark {color: grey}
 
-body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: #646464;}
+body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close {fill: #fcfcfc}
 
 body.win32 div#tab-container div[role="tab"].active { font-weight: bold; background-color: white; color: #000000;}
 body.win32.dark div#tab-container div[role="tab"].active { font-weight: bold; background-color: #14141e; color: #fefefe;}
