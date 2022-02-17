@@ -38,7 +38,8 @@ body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {pad
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 body.dark {color: grey}
 
-body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: grey}
+/*---outils fenêtre---*/
+body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: #c8c8c8}
 
 /*---ONGLETS---*/
 body.win32 div#tab-container div[role="tab"].active { font-weight: bold; background-color: white; color: #000000;}
@@ -48,13 +49,14 @@ body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1p
 body.win32.dark div#tab-container {background-color: #000000;}
 body.win32.dark div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-bg-dark);}
 
+/*---BARRES LATERALES---*/
 body.win32 #file-tree {background-color: var(--c-primary-background);}
 body #sidebar {background-color: var(--c-primary-background);}
+body.win32.dark #file-tree {background-color: var(--c-primary-bg-dark)}
+body.dark #sidebar {background-color: var(--c-primary-bg-dark);color: #c8c8c8;}
 
 /*---MODE NUIT, COULEURS---*/
 body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {background-color: var(--c-primary-bg-dark); color: #646464;}
-body.win32.dark #file-tree {background-color: var(--c-primary-bg-dark)}
-body.dark #sidebar {background-color: var(--c-primary-bg-dark);color: #e6e6e6;}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {
 border-color: var(--c-primary-background)}
 body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {border-color: var(--c-primary-bg-dark)}
