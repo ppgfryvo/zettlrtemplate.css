@@ -1,6 +1,6 @@
 /* 
 Zettlr CSS customization by Rovy
-"joaquina" theme 1.1 15/02/2022
+"joaquina" theme 1.2 17/02/2022
 Suggestions are welcome!
 
 Fonts used in this template: 
@@ -21,25 +21,31 @@ Fonts used in this template:
 body.win32 {font-family: 'Source Sans Pro', sans-serif;}
 #editor * {font-family: 'Source Serif Pro', 'Inconsolata Regular', serif;}
 
+
 .CodeMirror .size-header-2 {font-size: 1.6em}
 .CodeMirror .size-header-3 {font-size: 1.3em}
 .CodeMirror .size-header-4 {font-size: 1em}
 
-body.win32 #menubar { background-color: var(--c-primary-background); color: #646464;}
-body.win32 div#toolbar { background-color: var(--c-primary-background)}
+/*---MENUS ET BORDURES---*/
+body.win32 #menubar {background-color: var(--c-primary-background); color: #646464;}
+body.win32 div#toolbar {background-color: var(--c-primary-background)}
+body.win32 div#window-content {padding: 0px;}
 
 body.dark #menubar { background-color: var(--c-primary-bg-dark)}
 body.win32.dark div#toolbar {background-color: var(--c-primary-bg-dark); color: #646464;}
 body.win32.dark div#toolbar button {color: #646464;}
-body.dark #editor {background-color: #14141e;}
+body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
+body.dark #editor {background-color: var(--c-primary-bg-dark)}
 body.dark {color: grey}
 
-body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close {fill: #fcfcfc}
+body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: grey}
 
+/*---ONGLETS---*/
 body.win32 div#tab-container div[role="tab"].active { font-weight: bold; background-color: white; color: #000000;}
-body.win32.dark div#tab-container div[role="tab"].active { font-weight: bold; background-color: #14141e; color: #fefefe;}
-body div#tab-container {background-color: #efefef;}
+body.win32.dark div#tab-container div[role="tab"].active { font-weight: bold; background-color: var(--c-primary-bg-dark); color: #fefefe;}
+body div#tab-container {background-color: var(--c-primary-background)}
 body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-background);}
+body.win32.dark div#tab-container {background-color: #000000;}
 body.win32.dark div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-bg-dark);}
 
 body.win32 #file-tree {background-color: var(--c-primary-background);}
@@ -55,6 +61,10 @@ body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.wi
 body.win32.dark .system-tablist .system-tab.active {background-color: #14141e;}
 body div.split-view div.view.view-border {border-color: var(--c-primary-background)}
 body.dark div.split-view div.view.view-border {border-color: var(--c-primary-bg-dark)}
+
+/*---ENLEVER LES BARRES DE DEFILEMENT---*/
+body:not(.darwin) ::-webkit-scrollbar {display: none;}
+body:not(.darwin).dark ::-webkit-scrollbar {display: none;}
 
 /*---TAILLE DU TEXTE COLONNE DROITE---*/
 html {cursor: default; font-size: var(--base-font-size, 12px);}
