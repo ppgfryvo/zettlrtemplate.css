@@ -1,5 +1,6 @@
-/* 
-Zettlr CSS template "joaquina" v1.2 17/02/2022
+/*
+Zettlr CSS custom template 
+"joaquina" v1.2 17/02/2022
 */
 
 /*---COULEURS DE BASE---*/
@@ -65,6 +66,10 @@ body:not(.darwin).dark ::-webkit-scrollbar {display: none;}
 /*---TAILLE DU TEXTE COLONNE DROITE---*/
 html {cursor: default; font-size: var(--base-font-size, 12px);}
 body #sidebar div.toc-entry-container {display: flex; margin-bottom: 5px;}
+
+/*--citations--*/
+body #editor .CodeMirror .code-block-line {background-color: #fcfcfc}
+body.dark #editor .CodeMirror .code-block-line {background-color: #14141e}
 
 /*---TYPEWRITER---*/
 body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
