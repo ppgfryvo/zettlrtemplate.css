@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.2 17/02/2022
+"joaquina" v1.3 21/02/2022
 */
 
 /*---COULEURS DE BASE---*/
@@ -32,6 +32,10 @@ body.win32.dark div#toolbar button {color: #646464;}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 body.dark {color: grey}
+
+/*--Barre de titre en mode sans distraction--*/
+body.win32 div#titlebar {background-color: var(--c-primary-background);	color: var(--grey-1)}
+body.win32.dark div#titlebar {background-color: var(--c-primary-bg-black);	color: var(--grey-7)}
 
 /*---outils fenêtre---*/
 body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: #c8c8c8}
