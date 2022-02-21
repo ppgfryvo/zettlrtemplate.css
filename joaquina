@@ -10,12 +10,12 @@ Zettlr CSS custom template
   --c-primary-contrast: #fcfcfc;
   --c-primary-background: #fcfcfc;
   --c-primary-bg-dark: #0a0a0f;
+  --c-primary-bg-black: #050507;
 }
 
 /*---POLICES---*/
 body.win32 {font-family: 'Source Sans Pro', sans-serif;}
 #editor * {font-family: 'Source Serif Pro', 'Source Code Pro', serif;}
-
 
 .CodeMirror .size-header-2 {font-size: 1.6em}
 .CodeMirror .size-header-3 {font-size: 1.3em}
@@ -26,8 +26,8 @@ body.win32 #menubar {background-color: var(--c-primary-background); color: #6464
 body.win32 div#toolbar {background-color: var(--c-primary-background)}
 body.win32 div#window-content {padding: 0px;}
 
-body.dark #menubar { background-color: var(--c-primary-bg-dark)}
-body.win32.dark div#toolbar {background-color: var(--c-primary-bg-dark); color: #646464;}
+body.dark #menubar { background-color: var(--c-primary-bg-black)}
+body.win32.dark div#toolbar {background-color: var(--c-primary-bg-black); color: #646464;}
 body.win32.dark div#toolbar button {color: #646464;}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
@@ -47,8 +47,8 @@ body.win32.dark div#tab-container div[role="tab"]:not(:last-child) { border-righ
 /*---BARRES LATERALES---*/
 body.win32 #file-tree {background-color: var(--c-primary-background);}
 body #sidebar {background-color: var(--c-primary-background);}
-body.win32.dark #file-tree {background-color: var(--c-primary-bg-dark)}
-body.dark #sidebar {background-color: var(--c-primary-bg-dark);color: #c8c8c8;}
+body.win32.dark #file-tree {background-color: var(--c-primary-bg-black)}
+body.dark #sidebar {background-color: var(--c-primary-bg-black);color: #c8c8c8;}
 
 /*---MODE NUIT, COULEURS---*/
 body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {background-color: var(--c-primary-bg-dark); color: #646464;}
@@ -62,6 +62,10 @@ body.dark div.split-view div.view.view-border {border-color: var(--c-primary-bg-
 /*---ENLEVER LES BARRES DE DEFILEMENT---*/
 body:not(.darwin) ::-webkit-scrollbar {display: none;}
 body:not(.darwin).dark ::-webkit-scrollbar {display: none;}
+
+/*--couleur du niveau de titre--*/
+body #editor .CodeMirror .heading-tag {color: var(--grey-1)}
+body.dark #editor .CodeMirror .heading-tag {color: var(--grey-5)}
 
 /*---TAILLE DU TEXTE COLONNE DROITE---*/
 html {cursor: default; font-size: var(--base-font-size, 12px);}
