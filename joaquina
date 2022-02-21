@@ -67,9 +67,15 @@ body:not(.darwin).dark ::-webkit-scrollbar {display: none;}
 html {cursor: default; font-size: var(--base-font-size, 12px);}
 body #sidebar div.toc-entry-container {display: flex; margin-bottom: 5px;}
 
-/*--citations--*/
+/*--HL > citations--*/
 body #editor .CodeMirror .code-block-line {background-color: #fcfcfc}
 body.dark #editor .CodeMirror .code-block-line {background-color: #14141e}
+
+/*--HL code--*/
+body.dark #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: var(--grey-7)}
+
+/*--HL citations (zotero)--*/
+body.dark #editor .CodeMirror .citeproc-citation {background-color: var(--grey-7)}
 
 /*---TYPEWRITER---*/
 body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
