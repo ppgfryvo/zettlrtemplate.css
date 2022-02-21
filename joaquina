@@ -14,8 +14,10 @@ Zettlr CSS custom template
 }
 
 /*---POLICES---*/
-body.win32 {font-family: 'Source Sans Pro', sans-serif;}
-#editor * {font-family: 'Source Serif Pro', 'Source Code Pro', serif;}
+body.win32 {font-family: 'Source Sans Pro', sans-serif}
+#editor * {font-family: 'Source Serif Pro', serif}
+#editor * {font-family: 'Source Code Pro', monospace}
+
 
 .CodeMirror .size-header-2 {font-size: 1.6em}
 .CodeMirror .size-header-3 {font-size: 1.3em}
