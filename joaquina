@@ -22,9 +22,10 @@ body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
 .CodeMirror .size-header-4 {font-size: 1em}
 
 /*---MENUS ET BORDURES---*/
+#menubar {padding-left: 10px; background-image: none}
+
 body.win32 #menubar {background-color: var(--c-primary-background); color: #646464;}
 body.win32 div#toolbar {background-color: var(--c-primary-background)}
-body.win32 div#window-content {padding: 0px;}
 
 body.dark #menubar { background-color: var(--c-primary-bg-black)}
 body.win32.dark div#toolbar {background-color: var(--c-primary-bg-black); color: #646464;}
@@ -34,8 +35,8 @@ body.dark #editor {background-color: var(--c-primary-bg-dark)}
 body.dark {color: grey}
 
 /*--Barre de titre en mode sans distraction--*/
-body.win32 div#titlebar {background-color: var(--c-primary-background);	color: var(--grey-1)}
-body.win32.dark div#titlebar {background-color: var(--c-primary-bg-black);	color: var(--grey-7)}
+body.win32 div#titlebar {background-color: var(--c-primary-background);	color: var(--system-accent-color, --c-primary)}
+body.win32.dark div#titlebar {background-color: var(--c-primary-bg-black);	color: var(--system-accent-color, --c-primary)}
 
 /*---outils fenêtre---*/
 body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: #c8c8c8}
