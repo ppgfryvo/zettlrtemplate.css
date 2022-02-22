@@ -11,6 +11,9 @@ Zettlr CSS custom template
   --c-primary-background: #fcfcfc;
   --c-primary-bg-dark: #0a0a0f;
   --c-primary-bg-black: #050507;
+  --c-lt-buttons: #818181;
+  --c-dk-buttons: #646464;
+  --c-test: #00ccff
 }
 
 /*---POLICES---*/
@@ -24,26 +27,30 @@ body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
 /*---MENUS ET BORDURES---*/
 #menubar {padding-left: 10px; background-image: none}
 
-body.win32 #menubar {background-color: var(--c-primary-background); color: #646464;}
-body.win32 div#toolbar {background-color: var(--c-primary-background)}
+body {color: var(--c-lt-buttons)}
+body.win32 #menubar {background-color: var(--c-primary-background); color: var(--c-lt-buttons)}
+body.win32 div#toolbar {background-color: var(--c-primary-background); color: var(--c-lt-buttons)}
+body.win32 div#toolbar button {color: var(--c-lt-buttons)}
 
-body.dark #menubar { background-color: var(--c-primary-bg-black)}
-body.win32.dark div#toolbar {background-color: var(--c-primary-bg-black); color: #646464;}
-body.win32.dark div#toolbar button {color: #646464;}
+body.dark {color: var(--c-dk-buttons)}
+body.win32.dark #menubar { background-color: var(--c-primary-bg-black); color: var(--c-dk-buttons)}
+body.win32.dark div#toolbar {background-color: var(--c-primary-bg-black); color: var(--c-dk-buttons)}
+body.win32.dark div#toolbar button {color: var(--c-dk-buttons)}
+
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
-body.dark {color: grey}
 
 /*--Barre de titre en mode sans distraction--*/
 body.win32 div#titlebar {background-color: var(--c-primary-background);	color: var(--system-accent-color, --c-primary)}
 body.win32.dark div#titlebar {background-color: var(--c-primary-bg-black);	color: var(--system-accent-color, --c-primary)}
 
-/*---outils fenêtre---*/
-body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: #c8c8c8}
+/*---outils fermeture fenêtre---*/
+body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize, body.win32 div#window-controls .close { fill: var(--grey-2)}
+body.win32.dark div#window-controls .minimise, body.win32.dark div#window-controls .resize, body.win32.dark div#window-controls .close { fill: var(--grey-5)}
 
 /*---ONGLETS---*/
-body.win32 div#tab-container div[role="tab"].active { font-weight: bold; background-color: white; color: #000000;}
-body.win32.dark div#tab-container div[role="tab"].active { font-weight: bold; background-color: var(--c-primary-bg-dark); color: #fefefe;}
+body.win32 div#tab-container div[role="tab"].active {font-weight: bold; background-color: white; color: #000000;}
+body.win32.dark div#tab-container div[role="tab"].active {font-weight: bold; background-color: var(--c-primary-bg-dark); color: #fefefe;}
 body div#tab-container {background-color: var(--c-primary-background)}
 body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-background);}
 body.win32.dark div#tab-container {background-color: #000000;}
@@ -53,10 +60,10 @@ body.win32.dark div#tab-container div[role="tab"]:not(:last-child) { border-righ
 body.win32 #file-tree {background-color: var(--c-primary-background);}
 body #sidebar {background-color: var(--c-primary-background);}
 body.win32.dark #file-tree {background-color: var(--c-primary-bg-black)}
-body.dark #sidebar {background-color: var(--c-primary-bg-black);color: #c8c8c8;}
+body.dark #sidebar {background-color: var(--c-primary-bg-black);color: var(--grey-4)}
 
 /*---MODE NUIT, COULEURS---*/
-body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {background-color: var(--c-primary-bg-dark); color: #646464;}
+body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {background-color: var(--c-primary-bg-dark); color: var(--grey-5)}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {
 border-color: var(--c-primary-background)}
 body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {border-color: var(--c-primary-bg-dark)}
