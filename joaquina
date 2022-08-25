@@ -21,9 +21,10 @@ made for windows, so i'm not sure how it will behave on other operating systems
 body.win32 {font-family: 'Source Sans Pro', sans-serif}
 body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
 
-.CodeMirror .size-header-2 {font-size: 1.6em}
-.CodeMirror .size-header-3 {font-size: 1.3em}
-.CodeMirror .size-header-4 {font-size: 1em}
+.CodeMirror .size-header-1 {font-size: 2.3em; font-family: 'Source Sans Pro', sans-serif}
+.CodeMirror .size-header-2 {font-size: 1.6em; font-family: 'Source Sans Pro', sans-serif}
+.CodeMirror .size-header-3 {font-size: 1.3em; font-family: 'Source Sans Pro', sans-serif}
+.CodeMirror .size-header-4 {font-size: 1.2em}
 
 /*---MENUS ET BORDURES---*/
 #menubar {padding-left: 10px; background-image: none}
