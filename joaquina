@@ -1,7 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.3 21/02/2022
-made for windows, so i'm not sure how it will behave on other operating systems
+"joaquina" v1.4 26/08/2022
 */
 
 /*---COULEURS DE BASE---*/
@@ -10,8 +9,8 @@ made for windows, so i'm not sure how it will behave on other operating systems
   --c-primary-shade: #0099ff; 
   --c-primary-contrast: #fcfcfc;
   --c-primary-background: #fcfcfc;
-  --c-primary-bg-dark: #0a0a0f;
-  --c-primary-bg-black: #050507;
+  --c-primary-bg-dark: #111119;
+  --c-primary-bg-black: #09090d;
   --c-lt-buttons: #818181;
   --c-dk-buttons: #646464;
   --c-test: #00ccff
@@ -24,7 +23,10 @@ body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
 .CodeMirror .size-header-1 {font-size: 2.3em; font-family: 'Source Sans Pro', sans-serif}
 .CodeMirror .size-header-2 {font-size: 1.6em; font-family: 'Source Sans Pro', sans-serif}
 .CodeMirror .size-header-3 {font-size: 1.3em; font-family: 'Source Sans Pro', sans-serif}
-.CodeMirror .size-header-4 {font-size: 1.2em}
+.CodeMirror .size-header-4 {font-size: 1em}
+
+/*--COULEUR TEXTE--*/
+body.dark #editor .CodeMirror {color: var(--grey-1);}
 
 /*---MENUS ET BORDURES---*/
 #menubar {padding-left: 10px; background-image: none}
@@ -52,10 +54,10 @@ body.win32.dark div#window-controls .minimise, body.win32.dark div#window-contro
 
 /*---ONGLETS---*/
 body.win32 div#tab-container div[role="tab"].active {font-weight: bold; background-color: white; color: #000000;}
-body.win32.dark div#tab-container div[role="tab"].active {font-weight: bold; background-color: var(--c-primary-bg-dark); color: #fefefe;}
+body.win32.dark div#tab-container div[role="tab"].active {font-weight: bold; background-color: var(--c-primary-bg-dark); color: var(--grey-0);}
 body div#tab-container {background-color: var(--c-primary-background)}
 body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-background);}
-body.win32.dark div#tab-container {background-color: #000000;}
+body.win32.dark div#tab-container {background-color: var(--c-primary-bg-black);}
 body.win32.dark div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-bg-dark);}
 
 /*---BARRES LATERALES---*/
