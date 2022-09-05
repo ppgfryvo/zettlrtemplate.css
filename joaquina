@@ -20,8 +20,8 @@ Zettlr CSS custom template
 body.win32 {font-family: 'Source Sans Pro', sans-serif}
 body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
 
-.CodeMirror .size-header-1 {font-size: 2.3em; font-family: 'Source Sans Pro', sans-serif}
-.CodeMirror .size-header-2 {font-size: 1.6em; font-family: 'Source Sans Pro', sans-serif}
+.CodeMirror .size-header-1 {font-size: 2.5em; font-family: 'Source Sans Pro', sans-serif}
+.CodeMirror .size-header-2 {font-size: 1.8em; font-family: 'Source Sans Pro', sans-serif}
 .CodeMirror .size-header-3 {font-size: 1.3em; font-family: 'Source Sans Pro', sans-serif}
 .CodeMirror .size-header-4 {font-size: 1em}
 
@@ -64,7 +64,7 @@ body.win32.dark div#tab-container div[role="tab"]:not(:last-child) { border-righ
 body.win32 #file-tree {background-color: var(--c-primary-background);}
 body #sidebar {background-color: var(--c-primary-background);}
 body.win32.dark #file-tree {background-color: var(--c-primary-bg-black)}
-body.dark #sidebar {background-color: var(--c-primary-bg-black);color: var(--grey-4)}
+body.dark #sidebar {background-color: var(--c-primary-bg-black);color: var(--c-dk-buttons)}
 
 /*---MODE NUIT, COULEURS---*/
 body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {background-color: var(--c-primary-bg-dark); color: var(--grey-5)}
