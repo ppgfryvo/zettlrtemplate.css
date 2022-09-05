@@ -12,7 +12,7 @@ Zettlr CSS custom template
   --c-primary-bg-dark: #111119;
   --c-primary-bg-black: #09090d;
   --c-lt-buttons: #818181;
-  --c-dk-buttons: #646464;
+  --c-dk-buttons: #808080;
   --c-test: #00ccff
 }
 
