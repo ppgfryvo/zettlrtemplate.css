@@ -33,17 +33,9 @@ body.dark #editor .CodeMirror {color: var(--grey-1);}
 body .CodeMirror .cm-quote {color: var(--c-primary-shade)}
 body.dark .CodeMirror .cm-quote {color: var(--c-primary-shade)}
 
-/*--COMMENT--*/
-body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {
-    background-color: #fafafa;
-  	color: var(--grey-2b);
-}
-
-
-body.dark #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {
-  background-color: #14141E;
-  color: var(--grey-2b);
-}
+/*--COMMENTAIRES--*/
+body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: #fafafa; color: var(--grey-2b);}
+body.dark #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: #14141E; color: var(--grey-2b);}
 
 /*---MENUS ET BORDURES---*/
 #menubar {padding-left: 10px; background-image: none}
