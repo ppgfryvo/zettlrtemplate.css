@@ -13,7 +13,8 @@ Zettlr CSS custom template
   --c-primary-bg-black: #1a1b1d;
   --c-lt-buttons: #818181;
   --c-dk-buttons: #808080;
-  --c-test: #00ccff
+  --c-test: #00ccff;
+  --grey-2b: #a0a0a0;
 }
 
 /*---POLICES---*/
@@ -27,40 +28,21 @@ body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
 
 /*--COULEUR TEXTE--*/
 body.dark #editor .CodeMirror {color: var(--grey-1);}
+
 /*--QUOTES--*/
+body .CodeMirror .cm-quote {color: var(--c-primary-shade)}
 body.dark .CodeMirror .cm-quote {color: var(--c-primary-shade)}
 
 /*--COMMENT--*/
-body #editor .cm-comment {
-    background-color: #FFE5AD;
-  	color: var(--grey-3);
-  	padding: 3px;
-  	border-radius: 10px;
-    opacity: 0.7
-}
-
-body.dark #editor .cm-comment {
-    background-color: #14141E;
-    color: var(--grey-3);
-    padding: 3px;
-    border-radius: 10px;
-    opacity: 0.7;
-}
-
 body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {
-    background-color: #FFE5AD;
-  	color: var(--grey-3);
-  	padding: 3px;
-  	border-radius: 10px;
-    opacity: 0.7;
+    background-color: #fafafa;
+  	color: var(--grey-2b);
 }
+
 
 body.dark #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {
   background-color: #14141E;
-  color: var(--grey-2);
-  padding: 3px;
-  border-radius: 10px;
-  opacity: 0.7;
+  color: var(--grey-2b);
 }
 
 /*---MENUS ET BORDURES---*/
