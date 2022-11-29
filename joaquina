@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.4 26/08/2022
+"joaquina" v1.5 29/11/2022
 */
 
 /*---COULEURS DE BASE---*/
@@ -9,8 +9,8 @@ Zettlr CSS custom template
   --c-primary-shade: #0099ff; 
   --c-primary-contrast: #fcfcfc;
   --c-primary-background: #fcfcfc;
-  --c-primary-bg-dark: #111119;
-  --c-primary-bg-black: #09090d;
+  --c-primary-bg-dark: #202124;
+  --c-primary-bg-black: #1a1b1d;
   --c-lt-buttons: #818181;
   --c-dk-buttons: #808080;
   --c-test: #00ccff
@@ -44,7 +44,13 @@ body.win32.dark div#toolbar button {color: var(--c-dk-buttons)}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 
-/*--Barre de titre en mode sans distraction--*/
+/*--mode sans distraction / largeur du texte--*/
+/*--
+#editor.fullscreen .CodeMirror .CodeMirror-scroll {padding-right: 20vw !important;}
+#editor.fullscreen .CodeMirror {margin-left: 20vw !important;}
+--*/
+
+/*--mode sans distraction / barre de titre--*/
 body.win32 div#titlebar {background-color: var(--c-primary-background);	color: var(--system-accent-color, --c-primary)}
 body.win32.dark div#titlebar {background-color: var(--c-primary-bg-black);	color: var(--system-accent-color, --c-primary)}
 
