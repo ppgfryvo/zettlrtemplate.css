@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.5 29/11/2022
+"joaquina" v1.6 WIP 03/10/2023
 */
 
 /*---COULEURS DE BASE---*/
@@ -19,7 +19,7 @@ Zettlr CSS custom template
 
 /*---POLICES---*/
 body.win32 {font-family: 'Source Sans Pro', sans-serif}
-body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
+body #editor .CodeMirror {font-family: 'Source Sans Pro', sans-serif}
 
 .CodeMirror .size-header-1 {font-size: 2.5em; font-family: 'Source Sans Pro', sans-serif}
 .CodeMirror .size-header-2 {font-size: 1.8em; font-family: 'Source Sans Pro', sans-serif}
@@ -30,8 +30,7 @@ body #editor .CodeMirror {font-family: 'Source Serif Pro', serif}
 body.dark #editor .CodeMirror {color: var(--grey-1);}
 
 /*--QUOTES--*/
-body .CodeMirror .cm-quote {color: var(--c-primary-shade)}
-body.dark .CodeMirror .cm-quote {color: var(--c-primary-shade)}
+.main-editor-wrapper .cm-editor .code {color: var(--c-primary-shade)}
 
 /*--COMMENTAIRES--*/
 body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: #fafafa; color: var(--grey-2b);}
