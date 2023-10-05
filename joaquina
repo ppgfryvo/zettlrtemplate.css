@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.6 WIP 03/10/2023
+"joaquina" v1.7 WIP 03/10/2023
 */
 
 /*---COULEURS DE BASE---*/
@@ -9,12 +9,13 @@ Zettlr CSS custom template
   --c-primary-shade: #0099ff; 
   --c-primary-contrast: #fcfcfc;
   --c-primary-background: #fcfcfc;
-  --c-primary-bg-dark: #202124;
-  --c-primary-bg-black: #1a1b1d;
+  --c-primary-bg-dark: #191919;
+  --c-primary-bg-black: #222324;
   --c-lt-buttons: #818181;
   --c-dk-buttons: #808080;
   --c-test: #00ccff;
   --grey-2b: #a0a0a0;
+  --c-black: #000000
 }
 
 /*---POLICES---*/
@@ -28,6 +29,9 @@ body #editor .CodeMirror {font-family: 'Source Sans Pro', sans-serif}
 
 /*--COULEUR TEXTE--*/
 body.dark #editor .CodeMirror {color: var(--grey-1);}
+
+/*--COULEUR FOND--*/
+body.dark .main-editor-wrapper {background-color: var(--c-primary-bg-dark)}
 
 /*--QUOTES--*/
 .main-editor-wrapper .cm-editor .code {color: var(--c-primary-shade)}
@@ -67,12 +71,16 @@ body.win32 div#window-controls .minimise, body.win32 div#window-controls .resize
 body.win32.dark div#window-controls .minimise, body.win32.dark div#window-controls .resize, body.win32.dark div#window-controls .close { fill: var(--grey-5)}
 
 /*---ONGLETS---*/
+body.win32.dark div.tab-container {background-color: var(--c-primary-bg-black);}
+body.win32.dark div.tab-container div[role="tab"]:not(:last-child) {border-right: 1px solid var(--c-black)}
+body.win32.dark div.document-tablist-wrapper div.scroller.left {border-color: var(--c-black)}
+body.win32.dark div.document-tablist-wrapper div.scroller.right {border-left: 1px solid var(--c-black)}
+body.win32.dark div.tab-container div[role="tab"].active {background-color: var(--c-primary-bg-dark)}
+/*---anciens--*/
 body.win32 div#tab-container div[role="tab"].active {font-weight: bold; background-color: white; color: #000000;}
-body.win32.dark div#tab-container div[role="tab"].active {font-weight: bold; background-color: var(--c-primary-bg-dark); color: var(--grey-0);}
 body div#tab-container {background-color: var(--c-primary-background)}
 body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-background);}
-body.win32.dark div#tab-container {background-color: var(--c-primary-bg-black);}
-body.win32.dark div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-bg-dark);}
+
 
 /*---BARRES LATERALES---*/
 body.win32 #file-tree {background-color: var(--c-primary-background);}
@@ -81,11 +89,11 @@ body.win32.dark #file-tree {background-color: var(--c-primary-bg-black)}
 body.dark #sidebar {background-color: var(--c-primary-bg-black);color: var(--c-dk-buttons)}
 
 /*---MODE NUIT, COULEURS---*/
-body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {background-color: var(--c-primary-bg-dark); color: var(--grey-5)}
+body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {background-color: var(--c-primary-bg-black); color: var(--grey-5)}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {
 border-color: var(--c-primary-background)}
-body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {border-color: var(--c-primary-bg-dark)}
-body.win32.dark .system-tablist .system-tab.active {background-color: #14141e;}
+body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.win32.dark button {border-color: var(--c-primary-bg-black)}
+body.win32.dark .system-tablist .system-tab.active {background-color: var(--c-primary-bg-black)}
 body div.split-view div.view.view-border {border-color: var(--c-primary-background)}
 body.dark div.split-view div.view.view-border {border-color: var(--c-primary-bg-dark)}
 
