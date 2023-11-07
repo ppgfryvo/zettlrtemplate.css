@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.6.2 WIP 03/10/2023
+"joaquina" WIP V1.6.2 06/11/2023
 */
 
 /*---COULEURS DE BASE---*/
@@ -37,8 +37,12 @@ body.dark .main-editor-wrapper {background-color: var(--c-primary-bg-dark)}
 .main-editor-wrapper .cm-editor .code {color: var(--c-primary-shade)}
 
 /*--COMMENTAIRES--*/
-body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: #fafafa; color: var(--grey-2b);}
-body.dark #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: #14141E; color: var(--grey-2b);}
+body .main-editor-wrapper .cm-editor .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: var(--grey-0);}
+body .main-editor-wrapper .cm-editor .cm-comment, body.dark .main-editor-wrapper .cm-editor .cm-fenced-code, body.dark .main-editor-wrapper .cm-editor .cm-inline-math {
+    color: var(--grey-2b);}
+body.dark .main-editor-wrapper .cm-editor .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: var(--c-primary-bg-black);}
+body.dark .main-editor-wrapper .cm-editor .cm-comment, body.dark .main-editor-wrapper .cm-editor .cm-fenced-code, body.dark .main-editor-wrapper .cm-editor .cm-inline-math {
+    color: var(--c-dk-buttons);}
 
 /*---MENUS ET BORDURES---*/
 #menubar {padding-left: 10px; background-image: none}
