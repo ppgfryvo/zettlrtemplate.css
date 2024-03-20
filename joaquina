@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" WIP V1.6.2 06/11/2023
+"joaquina" v1.7 WIP 20/03/2024
 */
 
 /*---COULEURS DE BASE---*/
@@ -20,7 +20,7 @@ Zettlr CSS custom template
 
 /*---POLICES---*/
 body.win32 {font-family: 'Source Sans Pro', sans-serif}
-body #editor .CodeMirror {font-family: 'Source Sans Pro', sans-serif}
+span.cm-content-span {font-family: 'Source Sans Pro', sans-serif}
 
 .CodeMirror .size-header-1 {font-size: 2.5em; font-family: 'Source Sans Pro', sans-serif}
 .CodeMirror .size-header-2 {font-size: 1.8em; font-family: 'Source Sans Pro', sans-serif}
