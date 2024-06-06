@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.7 WIP 20/03/2024
+"joaquina" v1.8 WIP 06/05/2024
 */
 
 /*---COULEURS DE BASE---*/
@@ -9,8 +9,8 @@ Zettlr CSS custom template
   --c-primary-shade: #0099ff; 
   --c-primary-contrast: #fcfcfc;
   --c-primary-background: #fcfcfc;
-  --c-primary-bg-dark: #191919;
-  --c-primary-bg-black: #222324;
+  --c-primary-bg-dark: #222222;
+  --c-primary-bg-black: #262626;
   --c-lt-buttons: #818181;
   --c-dk-buttons: #808080;
   --c-test: #00ccff;
@@ -28,7 +28,7 @@ span.cm-content-span {font-family: 'Source Sans Pro', sans-serif}
 .CodeMirror .size-header-4 {font-size: 1em}
 
 /*--COULEUR TEXTE--*/
-body.dark #editor .CodeMirror {color: var(--grey-1);}
+.ͼv .cm-scroller {color: var(--grey-1)}
 
 /*--COULEUR FOND--*/
 body.dark .main-editor-wrapper {background-color: var(--c-primary-bg-dark)}
@@ -37,7 +37,7 @@ body.dark .main-editor-wrapper {background-color: var(--c-primary-bg-dark)}
 .main-editor-wrapper .cm-editor .code {color: var(--c-primary-shade)}
 
 /*--COMMENTAIRES--*/
-body .main-editor-wrapper .cm-editor .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: var(--grey-0);}
+body .main-editor-wrapper .cm-editor .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: var(--grey-1);}
 body .main-editor-wrapper .cm-editor .cm-comment, body.dark .main-editor-wrapper .cm-editor .cm-fenced-code, body.dark .main-editor-wrapper .cm-editor .cm-inline-math {
     color: var(--grey-2b);}
 body.dark .main-editor-wrapper .cm-editor .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {background-color: var(--c-primary-bg-black);}
@@ -60,6 +60,12 @@ body.win32.dark div#toolbar button {color: var(--c-dk-buttons)}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 
+body.win32 #file-tree #directories-dirs-header, body.win32 #file-tree #directories-files-header {border-bottom: 1px solid #444}/*--séparateurs--*/
+
+/*--barre info--*/
+.ͼ3 .cm-statusbar {background-color: var(--c-primary-bg-black); color: var(--grey-3)}
+.ͼ1 .cm-statusbar .cm-statusbar-item:not(:first-child) {border-left: 1px solid #444} /*--séparateurs--*/
+
 /*--mode sans distraction / largeur du texte--*/
 /*--
 #editor.fullscreen .CodeMirror .CodeMirror-scroll {padding-right: 20vw !important;}
@@ -80,6 +86,7 @@ body.win32.dark div.tab-container div[role="tab"]:not(:last-child) {border-right
 body.win32.dark div.document-tablist-wrapper div.scroller.left {border-color: var(--c-black)}
 body.win32.dark div.document-tablist-wrapper div.scroller.right {border-left: 1px solid var(--c-black)}
 body.win32.dark div.tab-container div[role="tab"].active {background-color: var(--c-primary-bg-dark)}
+body.win32 div.tab-container div[role="tab"].active {background-color: #acacac; color: var(--grey-1)}
 /*---anciens--*/
 body.win32 div#tab-container div[role="tab"].active {font-weight: bold; background-color: white; color: #000000;}
 body div#tab-container {background-color: var(--c-primary-background)}
