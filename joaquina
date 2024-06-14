@@ -60,7 +60,9 @@ body.win32.dark div#toolbar button {color: var(--c-dk-buttons)}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 
-body.win32 #file-tree #directories-dirs-header, body.win32 #file-tree #directories-files-header {border-bottom: 1px solid #444}/*--séparateurs--*/
+/*--séparateurs--*/
+body.win32 #file-tree #directories-dirs-header, body.win32 #file-tree #directories-files-header {border-bottom: 1px solid #444}
+body .split-pane-container .editor-pane.border-right, body .split-pane-container.border-right {border-right: 1px solid #444}
 
 /*--barre info--*/
 .ͼ3 .cm-statusbar {background-color: var(--c-primary-bg-black); color: var(--grey-3)}
@@ -91,7 +93,6 @@ body.win32 div.tab-container div[role="tab"].active {background-color: #acacac; 
 body.win32 div#tab-container div[role="tab"].active {font-weight: bold; background-color: white; color: #000000;}
 body div#tab-container {background-color: var(--c-primary-background)}
 body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-background);}
-
 
 /*---BARRES LATERALES---*/
 body.win32 #file-tree {background-color: var(--c-primary-background);}
