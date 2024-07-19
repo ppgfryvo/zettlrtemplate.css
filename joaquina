@@ -68,7 +68,7 @@ body .split-pane-container .editor-pane.border-right, body .split-pane-container
 .ͼ1 .cm-statusbar .cm-statusbar-item:not(:first-child) {border-left: 1px solid #444} /*--séparateurs--*/
 
 /*--mode sans distraction / largeur du texte--*/
-.main-editor-wrapper.fullscreen .cm-scroller {padding: 0 25vw;}
+@media (min-width: 1301px) {.main-editor-wrapper.fullscreen .cm-scroller {padding: 0 25vw;}}
 
 /*--mode sans distraction / barre de titre--*/
 body.win32 div#titlebar {background-color: var(--c-primary-background);	color: var(--system-accent-color, --c-primary)}
