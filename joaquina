@@ -60,8 +60,7 @@ body.win32.dark div#toolbar button {color: var(--c-dk-buttons)}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 
-/*--séparateurs--*/
-body.win32 #file-tree #directories-dirs-header, body.win32 #file-tree #directories-files-header {border-bottom: 1px solid #444}
+body.win32 #file-tree #directories-dirs-header, body.win32 #file-tree #directories-files-header {border-bottom: 1px solid #444}/*--séparateurs--*/
 body .split-pane-container .editor-pane.border-right, body .split-pane-container.border-right {border-right: 1px solid #444}
 
 /*--barre info--*/
@@ -69,10 +68,7 @@ body .split-pane-container .editor-pane.border-right, body .split-pane-container
 .ͼ1 .cm-statusbar .cm-statusbar-item:not(:first-child) {border-left: 1px solid #444} /*--séparateurs--*/
 
 /*--mode sans distraction / largeur du texte--*/
-/*--
-#editor.fullscreen .CodeMirror .CodeMirror-scroll {padding-right: 20vw !important;}
-#editor.fullscreen .CodeMirror {margin-left: 20vw !important;}
---*/
+.main-editor-wrapper.fullscreen .cm-scroller {padding: 0 25vw;}
 
 /*--mode sans distraction / barre de titre--*/
 body.win32 div#titlebar {background-color: var(--c-primary-background);	color: var(--system-accent-color, --c-primary)}
@@ -93,6 +89,7 @@ body.win32 div.tab-container div[role="tab"].active {background-color: #acacac; 
 body.win32 div#tab-container div[role="tab"].active {font-weight: bold; background-color: white; color: #000000;}
 body div#tab-container {background-color: var(--c-primary-background)}
 body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-background);}
+
 
 /*---BARRES LATERALES---*/
 body.win32 #file-tree {background-color: var(--c-primary-background);}
