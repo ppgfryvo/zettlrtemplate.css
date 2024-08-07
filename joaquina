@@ -15,7 +15,7 @@ Zettlr CSS custom template
   --c-dk-buttons: #808080;
   --c-test: #00ccff;
   --grey-2b: #a0a0a0;
-  --c-black: #000000
+  --c-black: #191919;
 }
 
 /*---POLICES---*/
@@ -60,8 +60,10 @@ body.win32.dark div#toolbar button {color: var(--c-dk-buttons)}
 body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {padding: 6px 8px}
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 
-body.win32 #file-tree #directories-dirs-header, body.win32 #file-tree #directories-files-header {border-bottom: 1px solid #444}/*--séparateurs--*/
-body .split-pane-container .editor-pane.border-right, body .split-pane-container.border-right {border-right: 1px solid #444}
+/*---séparateurs---*/
+body .split-pane-container .editor-pane.border-right, body .split-pane-container.border-right {border-right: 1px solid #dddddd}
+body.dark .split-pane-container .editor-pane.border-bottom {border-color: var(--c-black)}
+body.dark .split-pane-container .editor-pane.border-right {border-color: var(--c-black)}
 
 /*--barre info--*/
 .ͼ3 .cm-statusbar {background-color: var(--c-primary-bg-black); color: var(--grey-3)}
