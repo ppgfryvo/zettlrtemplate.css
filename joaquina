@@ -61,9 +61,9 @@ body.win32 input, body.win32 select, body.win32 textarea, body.win32 button {pad
 body.dark #editor {background-color: var(--c-primary-bg-dark)}
 
 /*---séparateurs---*/
-body .split-pane-container .editor-pane.border-right, body .split-pane-container.border-right {border-right: 1px solid #dddddd}
-body.dark .split-pane-container .editor-pane.border-bottom {border-color: var(--c-black)}
-body.dark .split-pane-container .editor-pane.border-right {border-color: var(--c-black)}
+body.dark .split-pane-container .editor-pane.border-right, body.dark .split-pane-container.border-right {border-right: 1px solid #262626}
+body.dark .split-pane-container .editor-pane.border-bottom {border-color: var(--c-primary-bg-black)}
+body.dark .split-pane-container .editor-pane.border-right {border-color: var(--c-primary-bg-black)}
 
 /*--barre info--*/
 .ͼ3 .cm-statusbar {background-color: var(--c-primary-bg-black); color: var(--grey-3)}
