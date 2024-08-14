@@ -22,10 +22,10 @@ Zettlr CSS custom template
 body.win32 {font-family: 'Source Sans Pro', sans-serif}
 span.cm-content-span {font-family: 'Source Sans Pro', sans-serif}
 
-.CodeMirror .size-header-1 {font-size: 2.5em; font-family: 'Source Sans Pro', sans-serif}
-.CodeMirror .size-header-2 {font-size: 1.8em; font-family: 'Source Sans Pro', sans-serif}
-.CodeMirror .size-header-3 {font-size: 1.3em; font-family: 'Source Sans Pro', sans-serif}
-.CodeMirror .size-header-4 {font-size: 1em}
+.cm-editor .size-header-1 {font-size: 2.5em; font-family: 'Source Sans Pro', sans-serif}
+.cm-editor .size-header-2 {font-size: 1.8em; font-family: 'Source Sans Pro', sans-serif}
+.cm-editor .size-header-3 {font-size: 1.3em; font-family: 'Source Sans Pro', sans-serif}
+.cm-editor .size-header-4 {font-size: 1em}
 
 /*--COULEUR TEXTE--*/
 .ͼv .cm-scroller {color: var(--grey-1)}
