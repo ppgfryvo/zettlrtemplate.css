@@ -92,7 +92,6 @@ body.win32 div#tab-container div[role="tab"].active {font-weight: bold; backgrou
 body div#tab-container {background-color: var(--c-primary-background)}
 body.win32 div#tab-container div[role="tab"]:not(:last-child) { border-right: 1px solid var(--c-primary-background);}
 
-
 /*---BARRES LATERALES---*/
 body.win32 #file-tree {background-color: var(--c-primary-background);}
 body #sidebar {background-color: var(--c-primary-background);}
@@ -113,8 +112,7 @@ body:not(.darwin) ::-webkit-scrollbar {display: none;}
 body:not(.darwin).dark ::-webkit-scrollbar {display: none;}
 
 /*--couleur du niveau de titre--*/
-body #editor .CodeMirror .heading-tag {color: var(--grey-1)}
-body.dark #editor .CodeMirror .heading-tag {color: var(--grey-5)}
+.ͼ1 .heading-tag {color: var(--grey-3)}
 
 /*---TAILLE DU TEXTE COLONNE DROITE---*/
 html {cursor: default; font-size: var(--base-font-size, 12px);}
