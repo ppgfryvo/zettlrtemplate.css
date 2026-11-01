@@ -9,7 +9,7 @@ Zettlr CSS custom template
   --c-primary-shade: #0099ff; 
   --c-primary-contrast: #fcfcfc;
   --c-primary-background: #fcfcfc;
-  --c-primary-bg-dark: #222222;
+  --c-primary-bg-dark: #191919;
   --c-primary-bg-black: #262626;
   --c-lt-buttons: #818181;
   --c-dk-buttons: #808080;
@@ -28,6 +28,7 @@ span.cm-content-span {font-family: 'Source Sans Pro', sans-serif}
 .cm-editor .cm-strong {font-family: 'Source Sans Pro', sans-serif}
 .cm-editor .size-header-3 {font-family: 'Source Sans Pro', sans-serif}
 .cm-editor .citeproc-citation {font-family: 'Source Sans Pro', sans-serif !important}
+.cm-editor .underline {font-family: 'Source Sans Pro', sans-serif !important}
 
 .ͼ1 :not(.cm-quote).cm-header-1 {font-size: 1.5em; font-family: 'Source Sans Pro', sans-serif}
 .ͼ1 :not(.cm-quote).cm-header-2 {font-size: 1.2em; font-family: 'Source Sans Pro', sans-serif}
@@ -39,7 +40,7 @@ span.cm-content-span {font-family: 'Source Sans Pro', sans-serif}
 .ͼv .cm-scroller {color: var(--grey-1)}
 
 /*--COULEUR FOND--*/
-body.dark .main-editor-wrapper {background-color: var(--c-primary-bg-dark)}
+body.dark .cm-editor, body.dark .cm-scroller {background-color: var(--c-primary-bg-dark) !important}
 
 /*--QUOTES--*/
 .main-editor-wrapper .cm-editor .code {color: var(--c-primary-shade)}
@@ -48,6 +49,7 @@ body.dark .main-editor-wrapper {background-color: var(--c-primary-bg-dark)}
 .cm-editor .cm-comment,
 .cm-editor .cm-block-comment {
   font-family: 'Source Code Pro', monospace !important;
+  font-size: 0.85em !important;
   padding: 2px 0;
 }
 
@@ -135,6 +137,8 @@ body.win32.dark input, body.win32.dark select, body.win32.dark textarea, body.wi
 body.win32.dark .system-tablist .system-tab.active {background-color: var(--c-primary-bg-black)}
 body div.split-view div.view.view-border {border-color: var(--c-primary-background)}
 body.dark div.split-view div.view.view-border {border-color: var(--c-primary-bg-dark)}
+
+body.dark .cm-editor .cm-line ::selection {background-color: #4a4a4a}
 
 /*--couleur du niveau de titre--*/
 .ͼ1 .heading-tag {color: var(--grey-3)}
