@@ -1,6 +1,6 @@
 /*
 Zettlr CSS custom template 
-"joaquina" v1.9 WIP 29/10/2026
+"joaquina" v2.0 WIP 02/11/2026
 */
 
 /*---COULEURS DE BASE---*/
@@ -170,3 +170,74 @@ body.dark #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line,
 /*---BARRES DE DEFILEMENT---*/
 body:not(.darwin) ::-webkit-scrollbar {width: 7px;}
 body:not(.darwin).dark ::-webkit-scrollbar {width: 7px;}
+
+/* ==========================================================
+Correction des niveaux de titre (dans le menu et dans l'export pdf)
+WARNING: code généré par l'IA (Claude)
+   ========================================================== */
+
+/* Style commun : masque la numérotation d'origine et la remplace */
+[role="tabpanel"]:has(> .toc-entry-container):not(:has(> .toc-heading-1)) {
+  & > .toc-entry-container > .toc-level { display: none; }
+  & > .toc-entry-container::before {
+    flex-shrink: 1;
+    padding: 0 5px;
+    font-weight: bold;
+    color: var(--system-accent-color, --c-primary);
+  }
+}
+
+/* Plus haut niveau présent : ## */
+[role="tabpanel"]:has(> .toc-heading-2):not(:has(> .toc-heading-1)) {
+  counter-reset: t2 t3 t4 t5 t6;
+  & > .toc-heading-2 { counter-increment: t2; counter-set: t3 0 t4 0 t5 0 t6 0; margin-left: 0px; }
+  & > .toc-heading-2::before { content: counter(t2); }
+  & > .toc-heading-3 { counter-increment: t3; counter-set: t4 0 t5 0 t6 0; margin-left: 10px; }
+  & > .toc-heading-3::before { content: counter(t2) "." counter(t3); }
+  & > .toc-heading-4 { counter-increment: t4; counter-set: t5 0 t6 0; margin-left: 20px; }
+  & > .toc-heading-4::before { content: counter(t2) "." counter(t3) "." counter(t4); }
+  & > .toc-heading-5 { counter-increment: t5; counter-set: t6 0; margin-left: 30px; }
+  & > .toc-heading-5::before { content: counter(t2) "." counter(t3) "." counter(t4) "." counter(t5); }
+  & > .toc-heading-6 { counter-increment: t6; margin-left: 40px; }
+  & > .toc-heading-6::before { content: counter(t2) "." counter(t3) "." counter(t4) "." counter(t5) "." counter(t6); }
+}
+
+/* Plus haut niveau présent : ### */
+[role="tabpanel"]:has(> .toc-heading-3):not(:has(> .toc-heading-1, > .toc-heading-2)) {
+  counter-reset: t3 t4 t5 t6;
+  & > .toc-heading-3 { counter-increment: t3; counter-set: t4 0 t5 0 t6 0; margin-left: 0px; }
+  & > .toc-heading-3::before { content: counter(t3); }
+  & > .toc-heading-4 { counter-increment: t4; counter-set: t5 0 t6 0; margin-left: 10px; }
+  & > .toc-heading-4::before { content: counter(t3) "." counter(t4); }
+  & > .toc-heading-5 { counter-increment: t5; counter-set: t6 0; margin-left: 20px; }
+  & > .toc-heading-5::before { content: counter(t3) "." counter(t4) "." counter(t5); }
+  & > .toc-heading-6 { counter-increment: t6; margin-left: 30px; }
+  & > .toc-heading-6::before { content: counter(t3) "." counter(t4) "." counter(t5) "." counter(t6); }
+}
+
+/* Plus haut niveau présent : #### */
+[role="tabpanel"]:has(> .toc-heading-4):not(:has(> .toc-heading-1, > .toc-heading-2, > .toc-heading-3)) {
+  counter-reset: t4 t5 t6;
+  & > .toc-heading-4 { counter-increment: t4; counter-set: t5 0 t6 0; margin-left: 0px; }
+  & > .toc-heading-4::before { content: counter(t4); }
+  & > .toc-heading-5 { counter-increment: t5; counter-set: t6 0; margin-left: 10px; }
+  & > .toc-heading-5::before { content: counter(t4) "." counter(t5); }
+  & > .toc-heading-6 { counter-increment: t6; margin-left: 20px; }
+  & > .toc-heading-6::before { content: counter(t4) "." counter(t5) "." counter(t6); }
+}
+
+/* Plus haut niveau présent : ##### */
+[role="tabpanel"]:has(> .toc-heading-5):not(:has(> .toc-heading-1, > .toc-heading-2, > .toc-heading-3, > .toc-heading-4)) {
+  counter-reset: t5 t6;
+  & > .toc-heading-5 { counter-increment: t5; counter-set: t6 0; margin-left: 0px; }
+  & > .toc-heading-5::before { content: counter(t5); }
+  & > .toc-heading-6 { counter-increment: t6; margin-left: 10px; }
+  & > .toc-heading-6::before { content: counter(t5) "." counter(t6); }
+}
+
+/* Plus haut niveau présent : ###### */
+[role="tabpanel"]:has(> .toc-heading-6):not(:has(> .toc-heading-1, > .toc-heading-2, > .toc-heading-3, > .toc-heading-4, > .toc-heading-5)) {
+  counter-reset: t6;
+  & > .toc-heading-6 { counter-increment: t6; margin-left: 0px; }
+  & > .toc-heading-6::before { content: counter(t6); }
+}
